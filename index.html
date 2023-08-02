@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="logo">
+        <img class="logo__img" src="img/logo.png" alt="Logo de Alura">
+    </header>
+
+    <main class="contenedor">
+        <section class="encriptador">
+            <textarea class="encriptador__texto" placeholder="Ingrese el texto aquí"></textarea>
+
+            <div class="encriptador__informacion">
+                <h6 class="informacion__texto">Solo letras minúsculas y sin acentos</h6>
+            </div>
+
+            <div class="encriptador__botones">
+                <button class="botones__encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="botones__desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="resultado">
+            <textarea class="resultado__texto"></textarea>
+
+            <div class="resultado__botones">
+                <button class="botones__copiar" onclick="btnCopiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
